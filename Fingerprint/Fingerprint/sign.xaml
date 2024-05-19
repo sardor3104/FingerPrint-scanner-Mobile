@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fingerprint.sign" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Fill" Orientation="Vertical">
+            <Frame
+                     HorizontalOptions="Fill"
+                     VerticalOptions="Start" 
+                     HeightRequest="220"
+                     BackgroundColor="Gainsboro">
+                <Label x:Name="label_head" Text="Ma'lumotlaringizni kiriting" 
+                       FontSize="32" 
+                       TextTransform="Uppercase"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="FillAndExpand" />
+            </Frame>
+                <Entry x:Name="entry_email"
+                       Keyboard="Email"
+                       ReturnType="Next"
+                       Completed="Clicked_xabar"
+                       Placeholder="Email adresingizni kiriting" 
+                       PlaceholderColor="#5D7440"
+                       Margin="50,0,40,10"
+                       IsTabStop="True"
+                       IsSpellCheckEnabled="True"/>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="entry_kalit" IsEnabled="False" Placeholder="kalit so'zni kiriting" 
+                        PlaceholderColor="Blue"
+                        IsPassword="True"
+                           ReturnType="Next"
+                           Completed="loginconfirm"
+                        Keyboard="Numeric"
+                        Margin="50,0,0,10"
+                        WidthRequest="280"
+                        />
+                    <Image x:Name="glaza" Source="closed.png" HorizontalOptions="End" 
+                        VerticalOptions="Center"
+                        HeightRequest="20" WidthRequest="20"
+                        Margin="0,0,10,0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SuffixIconTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+            <Label x:Name="label_soat" 
+        Text="" TextColor="DarkOliveGreen" FontSize="Header" VerticalOptions="End" HorizontalTextAlignment="Center"/>
+            <Label x:Name="label_error" 
+                       Text="" 
+                       TextColor="red" 
+                       FontSize="20"
+                       HorizontalTextAlignment="Center"/>
+            <Label x:Name="label_error_plus" HorizontalOptions="CenterAndExpand" Text="" TextColor="Aqua" FontSize="Micro"/>
+            <Button Text="email orqali bir martalik kodni olish" 
+                HeightRequest="40" 
+                CornerRadius="30"
+                    HorizontalOptions="Center"
+                    BorderColor="Black"
+                BorderWidth="2"
+                    VerticalOptions="EndAndExpand"
+                Clicked="Clicked_xabar"/>
+
+   
+            <Button x:Name="buttonOK" 
+                    CornerRadius="30"
+                    HorizontalOptions="Center"
+                    HeightRequest="50"
+                    WidthRequest="300"
+                    VerticalOptions="EndAndExpand"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Margin="20"
+                    Clicked="loginconfirm"
+                    Text="ok"/>
+             </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

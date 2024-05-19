@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fingerprint.LoginWithKeyUI" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Aqua" CornerRadius="12" HeightRequest="100">
+                <Label Text="Ma'lumotlaringizni kiritishingiz mumkin" 
+                       TextColor="Black" FontSize="34"  
+                       LineBreakMode="TailTruncation" 
+                       MaxLines="3" HorizontalOptions="Fill" 
+                       VerticalOptions="Start"/>
+            </Frame>
+            <Entry x:Name="entry_email" Placeholder="Email adresingizni kiriting" 
+                   PlaceholderColor="#669999" 
+                   Margin="50,0,40,10"
+                   TextColor="Blue"
+                   Keyboard="Email"
+                   IsTabStop="True"
+                   IsSpellCheckEnabled="True"
+                   ReturnType="Next" />
+            <StackLayout Orientation="Horizontal">
+            <Entry x:Name="entry_kalit"  Placeholder="kalit so'zni kiriting" 
+                PlaceholderColor="#669999"
+                   TextColor="Blue"
+                   IsPassword="True" 
+                   Margin="50,0,0,10"
+                   WidthRequest="280"
+                   ReturnType="Next"
+                   Completed="loginconfirm"
+                   />
+                <Image x:Name="glaza" Source="closed.png" HorizontalOptions="End" 
+                   VerticalOptions="Center" 
+                   HeightRequest="20" WidthRequest="20" 
+                   Margin="0,0,10,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SuffixIconTapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <Label x:Name="label_error" Text="" TextColor="red" FontSize="20"/>
+            <Label x:Name="label_error_plus" Text="" TextColor="Aqua" FontSize="Micro"/>
+            <Button x:Name="buttonOK" Clicked="loginconfirm" Text="ok" WidthRequest="300" BorderColor="GreenYellow" BorderWidth="2" HorizontalOptions="Center" CornerRadius="30"/>
+            <Button Text="barmoq izi qurilmasi yordamida registratsiya" HorizontalOptions="Center" WidthRequest="300" CornerRadius="30" BorderColor="Chocolate" BorderWidth="2" Clicked="Button_Clicked"/>
+            <Label x:Name="label_soat" Text="" TextColor="DarkOliveGreen" FontSize="40" HorizontalTextAlignment="Center" BackgroundColor="AliceBlue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

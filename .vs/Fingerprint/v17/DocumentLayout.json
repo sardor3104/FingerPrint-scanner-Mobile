@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|c:\\users\\asus\\source\\repos\\fingerprint\\fingerprint\\fingerprint\\sign.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|solutionrelative:fingerprint\\fingerprint\\sign.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|C:\\Users\\Asus\\source\\repos\\Fingerprint\\fingerprint\\fingerprint\\sign_up.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|solutionrelative:fingerprint\\fingerprint\\sign_up.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|C:\\Users\\Asus\\source\\repos\\Fingerprint\\fingerprint\\fingerprint\\fingerprintcapturepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|solutionrelative:fingerprint\\fingerprint\\fingerprintcapturepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|C:\\Users\\Asus\\source\\repos\\Fingerprint\\fingerprint\\fingerprint\\fingerprintcapturepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|solutionrelative:fingerprint\\fingerprint\\fingerprintcapturepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|C:\\Users\\Asus\\source\\repos\\Fingerprint\\fingerprint\\fingerprint\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A693F8B-59C1-432A-A7CE-C81172C5C4BC}|Fingerprint\\Fingerprint\\Fingerprint.csproj|solutionrelative:fingerprint\\fingerprint\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sign.xaml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\sign.xaml",
+              "RelativeDocumentMoniker": "Fingerprint\\Fingerprint\\sign.xaml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\sign.xaml",
+              "RelativeToolTip": "Fingerprint\\Fingerprint\\sign.xaml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAcwE4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T13:42:10.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Fingerprint\\Fingerprint\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\App.xaml.cs",
+              "RelativeToolTip": "Fingerprint\\Fingerprint\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T11:23:07.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sign_up.xaml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\sign_up.xaml",
+              "RelativeDocumentMoniker": "Fingerprint\\Fingerprint\\sign_up.xaml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\sign_up.xaml",
+              "RelativeToolTip": "Fingerprint\\Fingerprint\\sign_up.xaml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAcwC0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T11:17:53.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FingerprintCapturePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml",
+              "RelativeDocumentMoniker": "Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml",
+              "RelativeToolTip": "Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T05:12:28.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FingerprintCapturePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml.cs",
+              "RelativeDocumentMoniker": "Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Fingerprint\\Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml.cs",
+              "RelativeToolTip": "Fingerprint\\Fingerprint\\FingerprintCapturePage.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:45:55.275Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

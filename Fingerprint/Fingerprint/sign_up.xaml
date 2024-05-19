@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fingerprint.sign_up">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#ffffff">
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="nature.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand">
+                </Image>
+            <Label x:Name="label_name" 
+                   FontSize="30" 
+                   FontAttributes="Italic" 
+                   Margin="0,30,0,0" 
+                   HorizontalTextAlignment="Center" 
+                   Text="Assalomu alaykum platformamizga hush kelibsiz sizdan quyidagi ma'lumotlarni kiritishingizni so'raymiz:" 
+                       HorizontalOptions="CenterAndExpand" TextColor="LightYellow"/>
+            </Grid>
+            <Entry x:Name="entry_ism" Placeholder="Ism" ReturnType="Next"/>
+            <Entry x:Name="entry_familiya" Placeholder="Familiya" ReturnType="Next"/>
+            
+            <Entry x:Name="entry_parol" Placeholder="parol" IsPassword="True" Completed="Button_Clicked"/>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="label_tyil" Text="tugilgan kun kun/oy/yil"/>
+            <DatePicker x:Name="dpick_tyil"/>
+            <Image Source="date.png" WidthRequest="20" />
+            </StackLayout>
+            <Label x:Name="label_email" Text="" TextColor="DarkOrchid" HorizontalOptions="Center" FontSize="20"/>
+            <Label x:Name="label_error" Text="" TextColor="Red" FontSize="Medium" VerticalTextAlignment="Start"/>
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text=" rasmni tanlash orqali yuborish " 
+                        Clicked="Button_Clicked_1"
+                        CornerRadius="30" WidthRequest="170" 
+HorizontalOptions="Center" Margin="10" BackgroundColor="Orange"/>
+                <Button Text="tasdiqlash" Clicked="Button_Clicked" 
+                    CornerRadius="30" WidthRequest="170" 
+                    HorizontalOptions="Center" Margin="10" BackgroundColor="Orange"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

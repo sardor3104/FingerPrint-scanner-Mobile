@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fingerprint.LoginUI" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout x:Name="login" Orientation="Vertical" 
+                     VerticalOptions="Fill" 
+                     HorizontalOptions="Fill"
+                     BackgroundColor="#ffffff">
+
+            <Frame BackgroundColor="DarkTurquoise" Scale="1.05">
+                <Label x:Name="label_assalom"
+                HorizontalTextAlignment="Center"
+                Text="Assalomu alaykum"
+                TextColor="IndianRed" 
+                    FontAttributes="Bold"
+                    FontFamily="Cabin"
+                
+                TextTransform="Uppercase"
+                TextDecorations="Underline"
+                BackgroundColor="Transparent"
+                FontSize="Large"
+                Margin="10"
+                HorizontalOptions="Center"
+                />
+            </Frame>
+            <Polygon BackgroundColor="SpringGreen" 
+                     HorizontalOptions="Fill"  
+                     BindingContext="Salom " 
+                     Scale="1"
+                     HeightRequest="0.1"
+                     />
+            <Frame BackgroundColor="Transparent">
+                <ImageButton Clicked="Clicked_barmoq" Source="barmoq.png" IsVisible="True" Aspect="Fill"
+                    IsEnabled="True"
+                    HeightRequest="260"
+                    Margin="10"
+                             VerticalOptions="StartAndExpand"
+                     />
+            </Frame>
+            <Button Text="barmoq izini ishlatish" Clicked="Clicked_barmoq" BackgroundColor="Transparent"/>
+
+            <Button x:Name="button_muammo" 
+                    HorizontalOptions="Center" 
+                    BackgroundColor="SpringGreen" 
+                    WidthRequest="300" CornerRadius="30" 
+                    Text="Muammoni ko'rish" 
+                    Clicked="Clicked_muammo" 
+                    IsVisible="False"/>
+            <Button Text="kalit orqali urinib ko'rish" 
+                    x:Name="button_kalit" 
+                    BackgroundColor="SpringGreen" 
+                    BorderColor="OrangeRed" 
+                    BorderWidth="2" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="300" 
+                    CornerRadius="30" 
+                    Clicked="clicked_kalit" />
+            <Button Text="menda barmoq izini skanerlash zk 4500 qurilmasi mavjud" 
+                    BackgroundColor="SpringGreen" 
+                    BorderColor="OrangeRed" 
+                    BorderWidth="2" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="300" 
+                    Clicked="Button_Capture"
+                    CornerRadius="30" />
+            <StackLayout BackgroundColor="AliceBlue" Padding="20" Orientation="Vertical" VerticalOptions="EndAndExpand" HorizontalOptions="Fill">
+                <Label Text="akkoutnni chiqarib yuborish" HorizontalOptions="Center" 
+                   VerticalOptions="EndAndExpand" TextColor="Red" 
+                   TextDecorations="Underline" FontSize="14">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                        Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="login parol oqali kirish" HorizontalOptions="Center" 
+                   VerticalOptions="EndAndExpand" TextColor="Red" 
+                   TextDecorations="Underline" FontSize="14">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                        Tapped="Tapped_login"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="ro'yxatdan o'tmaganmisiz" HorizontalOptions="Center" 
+                   VerticalOptions="EndAndExpand" TextColor="Red" 
+                   TextDecorations="Underline" FontSize="14">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                        Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+        <Grid BackgroundColor="#ffffff"
+              RowDefinitions="*,*"
+              x:Name="grid_firstpage" >
+            <Image Source="mountain.png" Aspect="AspectFill"/>
+            <StackLayout Grid.Row="1">
+                <Frame CornerRadius="400" 
+                   HasShadow="False" 
+                   HorizontalOptions="Center" 
+                   WidthRequest="100" 
+                   Margin="10,-50,10,0">
+                    <Image Source="barmoq.png" />
+                </Frame>
+                <Label Text="Finger Print ilovasi authentifikatsiya usulini tanlang" 
+                   TextColor="DarkTurquoise" FontSize="30"
+                   HorizontalTextAlignment="Center"/>
+                <StackLayout Orientation="Vertical" 
+                         VerticalOptions="EndAndExpand"
+                         Padding="30" Spacing="10">
+                    <Button Text="Login"
+                        Clicked="Button_Clicked"
+                    CornerRadius="30" 
+                    BackgroundColor="Orange"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"/>
+                    <Button Text="sign up" 
+                    CornerRadius="30"
+                    Clicked="Button_Clicked_1"
+                    BackgroundColor="Orange"
+                    HorizontalOptions="Center"
+                    WidthRequest="350"
+                    />
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fingerprint.parol" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Grid BackgroundColor="Bisque"
+                  VerticalOptions="FillAndExpand"
+                  Padding="20"
+                  >
+                <Grid BackgroundColor="Red" Margin="10,40">
+                    <Label Text="Marhamat parolingizni kiritishingiz mumkin" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" TextDecorations="Underline" FontAttributes="Bold"/>
+                    <Label x:Name="label_parol" HorizontalOptions="Center" Text="****" TextColor="Azure" Grid.Row="1" FontSize="Header"/>
+                </Grid>
+                <Grid BackgroundColor="AliceBlue" Padding="20" Grid.Row="1" RowDefinitions="5" ColumnDefinitions="3" IsVisible="true">
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked" Grid.Column="1" Grid.Row="1" Text="1" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_1" Grid.Column="2" Grid.Row="1" Text="2" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_2" Grid.Column="3" Grid.Row="1" Text="3" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_3" Grid.Column="1" Grid.Row="2" Text="4" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_4" Grid.Column="2" Grid.Row="2" Text="5" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_5" Grid.Column="3" Grid.Row="2" Text="6" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_6" Grid.Column="1" Grid.Row="3" Text="7" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_7" Grid.Column="2" Grid.Row="3" Text="8" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_8" Grid.Column="3" Grid.Row="3" Text="9" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_9" Grid.Column="1" Grid.Row="4" Text="Ok" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_10" Grid.Column="2" Grid.Row="4" Text="0" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_11" Grid.Column="3" Grid.Row="4" Text=">>" TextColor="Gray" FontSize="Large"/>
+                    <Button BackgroundColor="Aqua" Clicked="Button_Clicked_12" Grid.Column="1" Grid.ColumnSpan="3" Text="tozalash" Grid.Row="5"/>
+                </Grid>
+                <Label x:Name="label_unutdingmi" Text="parolni untudingizmi*" VerticalOptions="End" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
